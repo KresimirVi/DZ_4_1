@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ <!--
+const tempDay = ['2023-11-29', -1, 0, -0.5,0.5, 0, 1.2,1.8,2, 3, 4, 6, 9, 12, 7, 6, 6,8,5,4,2,3,2,1,0];
+function funkcija(temperatureArray) {
+  const date = temperatureArray[0];
+  const temperatures = temperatureArray.slice(1);
+  const minTemperature = Math.min(...temperatures);
+  const maxTemperature = Math.max(...temperatures);
+  const averageTemperature = temperatures.reduce((acc, temp) => acc + temp, 0) / temperatures.length;
+  console.log(`Datum:${date}`);
+  console.log(`Najmanja temperatura:${minTemperature}`);
+  console.log(`Najveća temperatura:${maxTemperature}`);
+  console.log(`Prosječna temperatura:${averageTemperature.toFixed(2)}`); 
+  document.write(`Datum:${date}`); 
+}
+funkcija(tempDay);
+ -->
+ </script>
+</body>
+</html>
